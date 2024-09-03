@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Room Allocation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Examination Room Allocation</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="studentsFile" id="studentsFile" accept=".csv, .xlsx"> <!-- Accept CSV and Excel files -->
+            <div class="room-list" id="roomList">
+                <label class="room-item"><input type="checkbox" value="Room 201">Room 201</label>
+                <label class="room-item"><input type="checkbox" value="Room 202">Room 202</label>
+                <label class="room-item"><input type="checkbox" value="Room 203">Room 203</label>
+                <label class="room-item"><input type="checkbox" value="Room 204">Room 204</label>
+                <label class="room-item"><input type="checkbox" value="Room 205">Room 205</label>
+                <label class="room-item"><input type="checkbox" value="Room 206">Room 206</label>
+                <label class="room-item"><input type="checkbox" value="Room 207">Room 207</label>
+                <label class="room-item"><input type="checkbox" value="Room 208">Room 208</label>
+                <label class="room-item"><input type="checkbox" value="Room 209">Room 209</label>
+                <label class="room-item"><input type="checkbox" value="Room 210">Room 210</label>
+                <label class="room-item"><input type="checkbox" value="Room 211">Room 211</label>
+                <label class="room-item"><input type="checkbox" value="Room 212">Room 212</label>
+                <label class="room-item"><input type="checkbox" value="Room 213">Room 213</label>
+                <label class="room-item"><input type="checkbox" value="Room 214">Room 214</label>
+                <label class="room-item"><input type="checkbox" value="Room 215">Room 215</label>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+        <button id="downloadBtn">Download ZIP</button>
+        <div id="roomsRequired"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
